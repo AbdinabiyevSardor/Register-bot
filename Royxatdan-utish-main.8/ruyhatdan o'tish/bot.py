@@ -97,8 +97,9 @@ async def address_register(message:Message,state:FSMContext):
     phone_number = data.get("phone_number")
     country = data.get("country")
     age = data.get("age")
+    work = data.get("work")
     address = data.get("address")
-    text = f"Yangi foydalanuvchi:\nIsmi>>> {first_name}\nFamiliyasi>>> {last_name}\nYoshi>>> {age}\nTelefon raqami>>> {phone_number}\nDavlati>>> {country}\nManzili>>> {address}"
+    text = f"Yangi foydalanuvchi:\nIsmi>>> {first_name}\nFamiliyasi>>> {last_name}\nYoshi>>> {age}\nTelefon raqami>>> {phone_number}\nIshlash_joyi>>> {work}Davlati>>> {country}\nManzili>>> {address}"
     await bot.send_message(chat_id=ADMIN, text=text)
     
     
