@@ -10,8 +10,8 @@ from states import Form
 from aiogram.fsm.context import FSMContext
 import re
 
-ADMIN = 6952924165
-TOKEN = "6747702351:AAHovbu0HzQGsoY2LrgMPuCeWChXVTfqUD8"
+ADMIN = YOUR ID
+TOKEN = "YOUR_TOKEN"
 bot = Bot(TOKEN,parse_mode=ParseMode.HTML)
 dp = Dispatcher()
 
